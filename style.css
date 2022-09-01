@@ -1,0 +1,188 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62%;
+
+}
+/* body {
+   image: url('./images/music\ lock\ 1.png');
+   margin-top: 200px;
+} */
+
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: grid;   /*to place the items in center */
+    place-items: center;
+    background-image: url('./images/img4.gif');
+    background-size:480px;
+    /* image: url('./images/music\ lock\ 1.png'); */
+    /* zoom: 130%; */
+    /* background-repeat: no-repeat; */
+    background-size:contain;
+}
+
+/* .main_div .music_container{
+   margin-right: 130px;
+} */
+
+.music_container{
+    width: 40rem;   /* 1 rem = 10px*/
+    height: 55rem;
+    background-color: #767676;
+    border-radius: 2rem;
+    /* box-shadow: 0 1.2rem 3rem 0.5rem rgba(254, 253, 255, 0.2); */
+    padding: 3rem;
+    text-align: center;
+}
+
+
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #171717;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 3rem;  /*2rem*/
+    font-weight: 500;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.783);
+}
+
+.music_container #artist{
+    color: #8bf5cb;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.img_container{
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+}
+ img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.7);
+ }
+
+ .music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 3rem;
+    align-items: center;
+ }
+ .music_controls .fas{
+    color: #111111;
+    font-size: 2rem;
+    cursor: pointer;
+    /* filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4)); */
+    /* box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,1) ; */
+ }
+
+ .music_container .fas:active{
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,1);
+ }
+ .music_controls .main_button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.5) ;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center;  /* to center item in horizontally */
+    align-items: center;  /* to center the item in vertically */
+    font-size: 1.4rem;
+ }
+ .music_container .song{
+    display: none;
+ }
+
+ .music_controls .fas:hover{
+    color: rgb(88, 84, 84);
+    /* background-color: rgb(89, 27, 27); */
+ }
+ .music_controls .fas:active{
+    color: #111;
+ }
+
+ .music_controls .fa-play:active{
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,1) ;
+ }
+
+
+ /* add anime class to animate...here we dynamically add animation as clicking the play button */
+ .anime {
+    animation: rotateplayer 4s linear infinite;
+ }
+ @keyframes rotateplayer{
+    from { 
+        transform: rotate(0 deg);
+    }
+    to {
+        transform: rotate( 360deg);
+    }
+ }
+
+ .logo a{
+   text-decoration: none;
+   font-size: 6rem;
+   color: #484545;
+   text-shadow:3px 3px #ffffff;
+   /* margin: 20px; */
+ }
+
+ /* .main_div .logo{
+   margin-right: 130px;
+ } */
+
+ /* .song-slider{
+   width: 100%;
+   position: relative;
+   margin-top: 300px;
+} */
+
+.seek-bar{
+   -webkit-appearance: none;
+   width: 60%;
+   height: 7px;
+   border-radius: 10px;
+   background: #313232;
+   overflow: hidden;
+   cursor: pointer;
+   /* display: block; */
+   margin-top: 35px;
+}
+
+.seek-bar::-webkit-slider-thumb{
+   -webkit-appearance: none;
+   width: 1px;
+   height: 20px;
+   /* display: block; */
+   box-shadow: -400px 0 0 400px #8bf5cb;
+} 
+
+ /* .logo img{
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    top: 1rem;
+    margin-left: 20px;
+    
+ } */
